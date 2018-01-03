@@ -1,9 +1,9 @@
 const fs = require('fs');
-var information= fs.readFileSync('rand.json');
-var newlineBr = require('newline-br'); 
-var randomization = require('shuffle-array');
-var math=require('math');
-var wri= fs.createWriteStream("out.txt");
+let information= fs.readFileSync('rand.json');
+let newlineBr = require('newline-br'); 
+let randomization = require('shuffle-array');
+let math=require('math');
+let wri= fs.createWriteStream("out.txt");
 var parsed = JSON.parse(information);
 var teamdata=[];
 for(var x in parsed.students){
